@@ -1,0 +1,78 @@
+:root {
+    --charcoal: #264653ff;
+    --persian-green: #2a9d8fff;
+    --saffron: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-sienna: #e76f51ff;
+}
+
+@font-face {
+    font-family: 'Actor';
+    src: url(https://fonts.bunny.net/css?family=actor:400|albert-sans:300,400,500);
+}
+
+body {
+    display: flex;
+    background-color: var(--charcoal);
+    color: var(--saffron);
+    font-family: 'Actor', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row
+}
+
+.left-container {
+    display: flex;
+}
+
+img {
+    width: 32vw;
+    height: auto;
+    object-fit: fill;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-left: 20px;
+}
+
+/* .main__content__form {
+    display: flex;
+} */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main__content__form__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+input {
+    width: 11vw;
+    border: none;
+    border-bottom: 1px solid var(--saffron);
+    background-color: var(--charcoal);
+    color: var(--saffron);
+    font-family: 'Actor', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+}

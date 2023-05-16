@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
-    <rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <main class="main">
+        <div class="left-container">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="logo">
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="some-text">
+                <h1>Sign up</h1>
+                <p>Sign up to our website to get the latest news and offers</p>
+            </div>
+            <div class="main__content__form">
+                <form action="signup.php" method="post">
+                    <div class="row">
+                        <div class="main__content__form__input">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Enter your First Name">
+                        </div>
+                        <div class="main__content__form__input">
+                            <label for="last-name"> Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter your Last Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main__content__form__input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="main__content__form__input">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main__content__form__input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="main__content__form__input">
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" name="password2" id="password2" placeholder="Confirm your password">
+                        </div>
+                    </div>
+                    <div class="main__content__form__input__2">
+                        <button type="submit" name="signup-submit">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="main__content__login">
+            <p>Already have an account? <a href="login.php">Login</a></p>
+        </div>
+    </main>
 </body>
 </html>
